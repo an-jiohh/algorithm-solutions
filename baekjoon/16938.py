@@ -2,11 +2,15 @@ n, l, r, x = map(int, input().split())
 
 arr = list(map(int, input().split()))
 
-arr.sort()
+from itertools import combinations
 
-start = 0
-end = 1
-sum = arr[start] + arr[end]
+count = 0 
+for i in range(2,len(arr)+1) :
+    com = list(combinations(arr, i))
+    for j in com :
+        min_num, max_num = min(j), max(j)
+        temp = sum(j)
+        if l <= temp <= r and max_num-min_num >= x :
+            count += 1
 
-while len(arr) == start :
-    if sum 
+print(count)
