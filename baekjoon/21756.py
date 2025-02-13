@@ -8,4 +8,4 @@ while len(arr) != 1 :
         if (i + 1) % 2 == 0 :
             temp.append(arr[i])
     arr = temp
-print(*arr)
+print(*arr) 
