@@ -32,6 +32,7 @@
 #                 heapq.heappush(queue, (cost, end))
 # print(f"{answer:.2f}")
 
+# 크루스칼
 import sys
 import math
 
